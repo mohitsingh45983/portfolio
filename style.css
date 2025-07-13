@@ -455,3 +455,144 @@ nav .fas{
     margin-top: -40px;
     display: block;
 }
+
+.custom-work-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.custom-card {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s;
+  box-shadow: 0 0 10px rgba(255, 0, 79, 0.2);
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 0, 79, 0.5);
+}
+
+.custom-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.custom-card h2 {
+  color: #fff;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.custom-card p {
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.tech-stack {
+  margin: 15px 0;
+}
+
+.tech-stack span {
+  background-color: #262626;
+  color: #ff004f;
+  font-size: 12px;
+  padding: 6px 10px;
+  margin: 4px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.custom-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.custom-buttons a {
+  background-color: #ff004f;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: background 0.3s ease;
+}
+
+.custom-buttons a:hover {
+  background-color: #e60045;
+}
+
+.custom-buttons a i {
+  font-size: 18px;
+}
+
+
+/* Responsive adjustments for portfolio cards */
+@media (max-width: 1024px) {
+  .custom-work-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .custom-card h2 {
+    font-size: 20px;
+  }
+
+  .custom-card p {
+    font-size: 13px;
+  }
+
+  .custom-buttons a {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .tech-stack span {
+    font-size: 11px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-work-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .custom-card {
+    padding: 16px;
+  }
+
+  .custom-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .custom-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+
+  .custom-card h2 {
+    font-size: 18px;
+  }
+
+  .sub-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  #seeMoreBtn {
+    margin-top: 20px;
+  }
+}

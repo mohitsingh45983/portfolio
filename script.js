@@ -39,3 +39,13 @@ form.addEventListener('submit', e => {
         })
     .catch(error => console.error('Error!', error.message))
 })
+
+// See More Button Logic
+document.getElementById('seeMoreBtn').addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelectorAll('.extra-work').forEach(card => {
+    card.style.display = 'block';
+  });
+  this.style.display = 'none';
+});
+
